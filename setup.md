@@ -5,10 +5,10 @@
 For one match, let $X_A$ and $X_B$ be goals for teams A and B (non‑negative integers). The **joint PMF** is
 
 $$
-p_{A,B}(i,j) = \mathbb{P}(X_A=i,\; X_B=j),
+p_{A,B}(i,j) = \mathbb{P}(X_A=i, X_B=j),
 $$
 
-with $p_{A,B}\ge 0$ and probabilities summing to **1** (on the support you use—often $0,\ldots,9$ with negligible tail mass dropped and the grid renormalized).
+with $p_{A,B}\ge 0$ and probabilities summing to **1**.
 
 **Outcomes** (partition the score pairs):
 
@@ -19,7 +19,7 @@ with $p_{A,B}\ge 0$ and probabilities summing to **1** (on the support you use�
 **Simplest construction:** assume **independence**,
 
 $$
-\mathbb{P}(X_A=i,\; X_B=j)=\mathbb{P}(X_A=i)\,\mathbb{P}(X_B=j),
+\mathbb{P}(X_A=i, X_B=j)=\mathbb{P}(X_A=i)\ \mathbb{P}(X_B=j),
 $$
 
 so the joint is the **outer product** of two marginal PMFs. You can pick those marginals by hand (as in the notebook) or use **Poisson** $(\lambda_A,\lambda_B)$ with the same independence—$\lambda$’s can encode attack/defence strength. More general joints need an explicit model (e.g. copula or hierarchical conditionals), not an informal product of “given A / given B” terms.
