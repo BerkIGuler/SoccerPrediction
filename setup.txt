@@ -1,0 +1,11 @@
+Consider a soccer match. If we have a matrix for the number of goals scored by team A and team B, where the index (i,j) gives the probability that team A scores i goals and team B scores j goals (0-indexed matrix):
+
+- we know that the summation over the probabilities of all elements are 1 (valid PMF). It's safe to limit the size of the matrix to something like 10 by 10 as larger indices have roughly 0 probability.
+- We can model the score probability with PMF P(X_a = i, X_b = j).
+- We can also get priors on P(X_a) and P(X_b) based on their previous matches (not the matches they played against each other).
+- For simplicity we can assume the random variable X_a and X_b are independent.
+
+For a new match between team A and B, we want to predict the probability that (team A wins), i.e. sum over all elements with i > j, 0 (tie) i=j, and 2(team B wins) i.e. j > i, therefore these predictions should sum to 1.
+
+Let's assume we don't have any data that we can use to estimate the joint PMF and all we have are priors on individual PMFs.
+
