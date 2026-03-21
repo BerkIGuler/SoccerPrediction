@@ -25,8 +25,8 @@ $$
 Then the **joint PMF** is
 
 $$
-\mathbb{P}(X_A=i,\; X_B=j)
-  = e^{-(\lambda_A+\lambda_B)}\,\frac{\lambda_A^{\,i}}{i!}\,\frac{\lambda_B^{\,j}}{j!}.
+\mathbb{P}(X_A=i, X_B=j)
+  = e^{-(\lambda_A+\lambda_B)}\,\frac{\lambda_A^i}{i!}\,\frac{\lambda_B^j}{j!}.
 $$
 
 For computation you can truncate to a finite goal grid (e.g. $0,\ldots,9$) and renormalize if needed.
