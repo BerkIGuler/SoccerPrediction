@@ -1,0 +1,165 @@
+% Cross-references (\eqref, \ref) need the .aux file from a prior run.
+% Run pdflatex twice, or: latexmk -pdf poisson_match_rates.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+\title{Match score model:\\Poisson goals, outcomes, and empirical rates}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We specify independent Poisson goals for two teams, record the joint distribution and match-outcome probabilities, then connect the Poisson means $(\lambda_A,\lambda_B)$ to abstract attack/defense strengths and to simple plug-in formulas using per-team goals for/against and a league baseline.
+\end{abstract}
+
+%-------------------------------------------------------------------------
+\section{Match-level model: Poisson goals}
+\label{sec:model}
+
+For one fixture, let $X_A$ and $X_B$ denote goals scored by teams $A$ and $B$ over a fixed period (e.g.\ regulation time). We treat these as random counts.
+
+\subsection{Rates}
+
+Each team can be described by an \emph{attack} strength and a \emph{defense} strength (from data, priors, or ratings). The \emph{expected} goals in the match are driven by how each side's attack meets the opponent's defense:
+\begin{itemize}
+  \item $\lambda_A$ reflects \textbf{$A$'s attack against $B$'s defense} (how well $A$ scores when facing $B$'s defensive quality).
+  \item $\lambda_B$ reflects \textbf{$B$'s attack against $A$'s defense}.
+\end{itemize}
+Abstractly one chooses a map from those four ingredients into two nonnegative numbers, e.g.
+\[
+  \lambda_A = f(\mathrm{atk}_A, \mathrm{def}_B), \qquad
+  \lambda_B = f(\mathrm{atk}_B, \mathrm{def}_A),
+\]
+with the exact form of $f$ (linear, log-linear, tabulated, etc.) left to the modeller.
+
+\subsection{Independence and joint distribution}
+
+Assume
+\begin{equation}
+  X_A \sim \mathrm{Poisson}(\lambda_A), \qquad
+  X_B \sim \mathrm{Poisson}(\lambda_B), \qquad
+  X_A \perp X_B \ \text{ given } (\lambda_A,\lambda_B).
+  \label{eq:indep}
+\end{equation}
+Then the \textbf{joint probability mass function} is, for nonnegative integers $i,j$,
+\begin{equation}
+  \mathbb{P}(X_A=i,\, X_B=j)
+  = e^{-(\lambda_A+\lambda_B)}\,\frac{\lambda_A^{\,i}}{i!}\,\frac{\lambda_B^{\,j}}{j!}.
+  \label{eq:joint}
+\end{equation}
+
+\paragraph{Computation.}
+For implementation, one often truncates to a finite goal grid (e.g.\ $i,j \in \{0,\ldots,K\}$) and renormalizes the restricted distribution if probabilities outside the grid are negligible.
+
+\subsection{Match outcomes}
+
+From \eqref{eq:joint},
+\begin{align*}
+  \mathbb{P}(A \text{ wins}) &= \mathbb{P}(X_A > X_B), \\
+  \mathbb{P}(\text{draw})   &= \mathbb{P}(X_A = X_B), \\
+  \mathbb{P}(B \text{ wins}) &= \mathbb{P}(X_B > X_A).
+\end{align*}
+These three probabilities sum to $1$.
+
+\paragraph{Summary of Section~\ref{sec:model}.}
+Pick $(\lambda_A,\lambda_B)$ from \textbf{A's attack vs B's defense} and \textbf{B's attack vs A's defense}, then use independent Poisson goals to obtain the full score distribution and win/draw/lose probabilities.
+
+%-------------------------------------------------------------------------
+\section{Interpreting $\lambda$ as expectations}
+
+For a fixture between $A$ and $B$, one may interpret
+\[
+  \lambda_A = \mathbb{E}[X_A \mid \text{match } (A,B)], \qquad
+  \lambda_B = \mathbb{E}[X_B \mid \text{match } (A,B)],
+\]
+when the Poisson model is taken literally. The rest of the note discusses \emph{constructing} numerical values for $\lambda_A,\lambda_B$ from simple league summaries.
+
+%-------------------------------------------------------------------------
+\section{Notation for empirical summaries}
+\label{sec:notation}
+
+From past results (same competition and time window):
+\begin{itemize}
+  \item $\bar{s}_i$: mean goals \emph{for} team $i$ per match (GF).
+  \item $\bar{c}_i$: mean goals \emph{against} team $i$ per match (GA).
+  \item $\mu$: league mean goals scored per team--match row. With a balanced schedule and full double counting of each fixture, this typically equals the league mean GA per row as well.
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\section{Multiplicative attack $\times$ opponent defense}
+\label{sec:product}
+
+A simple closed form that adapts $\lambda$ to the opponent is
+\begin{equation}
+  \lambda_A \;=\; \bar{s}_A \cdot \frac{\bar{c}_B}{\mu},
+  \qquad
+  \lambda_B \;=\; \bar{s}_B \cdot \frac{\bar{c}_A}{\mu}.
+  \label{eq:product}
+\end{equation}
+
+\paragraph{Interpretation.}
+$\bar{s}_A$ is how much $A$ scores against an ``average'' defense in the sample.
+The factor $\bar{c}_B/\mu$ measures how much \emph{more} (or less) than average $B$ concedes.
+If $B$ is average defensively, $\bar{c}_B = \mu$ and $\lambda_A = \bar{s}_A$.
+
+\paragraph{Equivalent form.}
+\begin{equation*}
+  \lambda_A \;=\; \mu \cdot \frac{\bar{s}_A}{\mu} \cdot \frac{\bar{c}_B}{\mu},
+\end{equation*}
+i.e.\ baseline $\mu$ times an attack index for $A$ times a defensive leakiness index for $B$.
+
+\paragraph{Link to Section~\ref{sec:model}.}
+This choice of $f$ uses \emph{observed} GF/GA as proxies for attack and opponent-relative defense; it is one convenient plug-in, not the only map from $(\mathrm{atk}_A,\mathrm{def}_B)$ to $\lambda_A$.
+
+%-------------------------------------------------------------------------
+\section{Log-linear (Dixon--Coles style) view}
+
+A standard parameterization is
+\begin{equation*}
+  \log \lambda_{ij} \;=\; \log \mu + \alpha_i + \delta_j,
+\end{equation*}
+where $\alpha_i$ is an attack effect and $\delta_j$ a defense effect on goals opponents score against $j$.
+Plug-in estimates from summaries (before centering) give
+$\alpha_i \approx \log(\bar{s}_i/\mu)$,
+$\delta_j \approx \log(\bar{c}_j/\mu)$, hence
+\begin{equation*}
+  \lambda_A \approx \mu\,\exp(\alpha_A + \delta_B),
+\end{equation*}
+consistent with \eqref{eq:product} when exponentials are expanded without centering constraints.
+In a full fitted model, $\{\alpha_i\}$ and $\{\delta_j\}$ are usually centered for identifiability.
+
+%-------------------------------------------------------------------------
+\section{Shrinkage}
+
+Raw $\bar{s}_i$ and $\bar{c}_i$ are noisy when the sample size $n_i$ is small.
+An empirical-Bayes style fix shrinks toward the league mean, e.g.
+\begin{equation*}
+  \tilde{s}_i \;=\; \frac{n_i}{n_i + k}\,\bar{s}_i + \frac{k}{n_i + k}\,\mu
+\end{equation*}
+(and similarly $\tilde{c}_i$), then substitute $\tilde{s}$ and $\tilde{c}$ into \eqref{eq:product}.
+The constant $k > 0$ controls shrinkage strength.
+
+%-------------------------------------------------------------------------
+\section{Further remarks}
+
+\begin{itemize}
+  \item \textbf{Consistency with \eqref{eq:indep}.}
+  Under independent Poissons, $\lambda_A$ and $\lambda_B$ are not forced to sum to a fixed number; richer dependence (e.g.\ Dixon--Coles adjustment for low scores) modifies the joint law beyond \eqref{eq:joint}.
+
+  \item \textbf{Home advantage.}
+  If desired, multiply the relevant $\lambda$ by a factor $h > 1$ for the home side (or add $\log h$ in log space).
+
+  \item \textbf{Schedule strength.}
+  Raw $\bar{s}_i,\bar{c}_i$ mix team ability with the quality of opponents already played; iterative or likelihood-based attack--defense models partially address this.
+
+  \item \textbf{Relation to \eqref{eq:joint}.}
+  Any $(\lambda_A,\lambda_B)$---whether from theory, ratings, or \eqref{eq:product}---can be inserted into \eqref{eq:joint} to approximate the score grid and outcome probabilities in Section~\ref{sec:model}.
+\end{itemize}
+
+\end{document}

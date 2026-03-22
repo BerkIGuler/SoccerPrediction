@@ -1,1 +1,6 @@
 data/**/*.py
+
+docs/*
+!docs/*.tex
+!docs/*.pdf
+.DS_Store
