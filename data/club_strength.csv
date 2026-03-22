@@ -1,0 +1,399 @@
+team_full_name,offensive,defensive,league,country
+Arsenal,89.1,90.8,Premier League,England
+Manchester City,88.8,89.0,Premier League,England
+Bayern Munich,92.4,78.9,Bundesliga,Germany
+Barcelona,90.0,83.5,La Liga,Spain
+Liverpool,88.9,84.6,Premier League,England
+Paris S-G,88.1,82.5,Ligue 1,France
+Real Madrid,88.4,80.9,La Liga,Spain
+Chelsea,86.6,82.9,Premier League,England
+Manchester Utd,87.3,81.4,Premier League,England
+Inter,80.0,87.8,Serie A,Italy
+Nott’ham Forest,80.1,83.3,Premier League,England
+Brighton,80.5,82.8,Premier League,England
+Newcastle Utd,86.1,75.4,Premier League,England
+Como,74.0,86.7,Serie A,Italy
+Juventus,83.0,78.0,Serie A,Italy
+Sporting CP,77.5,82.9,Liga Portugal,Portugal
+Bournemouth,82.5,77.0,Premier League,England
+Leeds United,78.3,79.8,Premier League,England
+Aston Villa,77.0,80.3,Premier League,England
+Crystal Palace,74.4,82.4,Premier League,England
+Benfica,76.6,80.5,Liga Portugal,Portugal
+Atletico Madrid,80.5,75.1,La Liga,Spain
+Dortmund,79.3,76.4,Bundesliga,Germany
+Fulham,75.9,79.6,Premier League,England
+Tottenham,81.2,73.7,Premier League,England
+Leverkusen,77.6,77.5,Bundesliga,Germany
+Porto,70.1,83.1,Liga Portugal,Portugal
+RB Leipzig,78.0,75.5,Bundesliga,Germany
+Brentford,76.8,76.6,Premier League,England
+Everton,72.4,80.3,Premier League,England
+Lens,79.1,73.6,Ligue 1,France
+Stuttgart,79.7,72.3,Bundesliga,Germany
+Olympiakos Piraeus,60.2,86.0,Greek Super League,Greece
+Milan,70.3,80.6,Serie A,Italy
+Atalanta,77.7,73.3,Serie A,Italy
+Napoli,71.0,79.2,Serie A,Italy
+Roma,74.2,75.4,Serie A,Italy
+Monaco,77.2,71.3,Ligue 1,France
+Marseille,76.7,71.7,Ligue 1,France
+Betis,75.1,72.4,La Liga,Spain
+Celta Vigo,67.7,78.1,La Liga,Spain
+Bologna,71.2,75.2,Serie A,Italy
+Lille,64.0,79.8,Ligue 1,France
+Athletic Club,67.3,77.7,La Liga,Spain
+Hoffenheim,76.3,68.7,Bundesliga,Germany
+Bodo/Glimt,75.0,69.6,Norway Eliteserien,Norway
+Sunderland,65.9,77.9,Premier League,England
+Rennes,72.8,70.9,Ligue 1,France
+Braga,67.5,75.4,Liga Portugal,Portugal
+Wolves,68.1,74.7,Premier League,England
+Lyon,70.8,72.2,Ligue 1,France
+West Ham,71.2,70.8,Premier League,England
+Real Sociedad,74.5,66.3,La Liga,Spain
+Union SG,57.2,79.3,Pro League,Belgium
+Rayo Vallecano,68.4,71.1,La Liga,Spain
+Villarreal,69.5,70.1,La Liga,Spain
+Fiorentina,70.4,68.2,Serie A,Italy
+Strasbourg,67.9,70.6,Ligue 1,France
+Middlesbrough,65.1,72.9,Championship,England
+Sevilla,67.8,70.5,La Liga,Spain
+Getafe,54.0,79.5,La Liga,Spain
+Toulouse,67.0,70.7,Ligue 1,France
+Mainz 05,65.6,71.0,Bundesliga,Germany
+Club Brugge,74.4,60.6,Pro League,Belgium
+Eint Frankfurt,66.4,68.7,Bundesliga,Germany
+PAOK,53.2,77.5,Greek Super League,Greece
+Girona,67.9,66.5,La Liga,Spain
+Midtjylland,68.3,65.8,Danish Superliga,Denmark
+Burnley,67.1,66.1,Premier League,England
+PSV Eindhoven,74.6,56.3,Eredivisie,Netherlands
+Osasuna,65.2,67.8,La Liga,Spain
+Valencia,59.5,71.8,La Liga,Spain
+Freiburg,66.2,66.1,Bundesliga,Germany
+Galatasaray,66.2,66.1,Süper Lig,Türkiye
+Werder Bremen,65.5,66.7,Bundesliga,Germany
+Lazio,58.6,72.1,Serie A,Italy
+AEK Athens,61.0,70.0,Greek Super League,Greece
+Genoa,61.3,68.8,Serie A,Italy
+AGF,68.2,61.9,Danish Superliga,Denmark
+Augsburg,64.4,66.0,Bundesliga,Germany
+Koln,64.6,65.1,Bundesliga,Germany
+Lorient,61.5,68.0,Ligue 1,France
+Torino,63.5,66.3,Serie A,Italy
+Hamburger SV,62.1,66.8,Bundesliga,Germany
+Coventry City,64.8,64.0,Championship,England
+Brest,60.2,68.0,Ligue 1,France
+Ipswich Town,61.7,66.8,Championship,England
+Espanyol,66.1,62.3,La Liga,Spain
+Union Berlin,63.5,64.8,Bundesliga,Germany
+Slavia Praha,64.5,63.4,Czech First League,Czech Republic
+Gladbach,63.5,64.1,Bundesliga,Germany
+Elche,63.6,63.6,La Liga,Spain
+Viking,65.4,61.8,Norway Eliteserien,Norway
+Twente,67.3,59.0,Eredivisie,Netherlands
+Udinese,55.6,69.4,Serie A,Italy
+AZ Alkmaar,64.3,61.6,Eredivisie,Netherlands
+Fenerbahce,68.0,57.2,Süper Lig,Türkiye
+St. Pauli,54.3,69.8,Bundesliga,Germany
+Gil Vicente FC,61.6,63.7,Liga Portugal,Portugal
+Alaves,60.1,65.1,La Liga,Spain
+NEC Nijmegen,71.1,51.8,Eredivisie,Netherlands
+Norwich City,55.3,68.1,Championship,England
+Besiktas,63.7,60.4,Süper Lig,Türkiye
+Dinamo Zagreb,62.3,60.6,Croatian HNL,Croatia
+Mallorca,58.0,64.3,La Liga,Spain
+Sassuolo,58.7,63.3,Serie A,Italy
+Genk,65.1,56.4,Pro League,Belgium
+Levante,58.9,62.8,La Liga,Spain
+Auxerre,50.4,69.1,Ligue 1,France
+Feyenoord,65.0,55.7,Eredivisie,Netherlands
+Famalicao,50.0,68.9,Liga Portugal,Portugal
+Lecce,49.2,69.0,Serie A,Italy
+Portsmouth,53.9,65.6,Championship,England
+Le Havre,49.7,68.4,Ligue 1,France
+Paris FC,51.1,67.3,Ligue 1,France
+Viktoria Plzen,62.6,57.0,Czech First League,Czech Republic
+Southampton,59.8,59.8,Championship,England
+Ajax,62.3,57.0,Eredivisie,Netherlands
+Tromso,56.4,62.5,Norway Eliteserien,Norway
+Nice,58.5,60.3,Ligue 1,France
+Oviedo,53.0,64.5,La Liga,Spain
+Vitoria,57.1,60.8,Liga Portugal,Portugal
+Estoril,59.6,56.9,Liga Portugal,Portugal
+Sint-Truiden,58.6,57.9,Pro League,Belgium
+Trabzonspor,61.4,54.9,Süper Lig,Türkiye
+Hammarby IF,59.0,57.4,Sweden Allsvenskan,Sweden
+Swansea City,52.1,63.6,Championship,England
+Viborg,61.9,54.1,Danish Superliga,Denmark
+FC Copenhagen,61.0,54.7,Danish Superliga,Denmark
+Panathinaikos,51.4,63.7,Greek Super League,Greece
+Parma,49.9,64.8,Serie A,Italy
+Santa Clara,46.3,67.2,Liga Portugal,Portugal
+Anderlecht,59.2,56.2,Pro League,Belgium
+Westerlo,55.1,60.3,Pro League,Belgium
+Wolfsburg,62.6,51.9,Bundesliga,Germany
+Wrexham,56.6,58.5,Championship,England
+Elversberg,55.9,59.2,2. Bundesliga,Germany
+Omonia Nicosia,58.3,56.5,Cyprus First Division,Cyprus
+Molde,58.6,56.0,Norway Eliteserien,Norway
+Hellas Verona,51.4,62.4,Serie A,Italy
+RB Salzburg,59.0,55.5,Austrian Bundesliga,Austria
+Utrecht,55.0,59.4,Eredivisie,Netherlands
+Millwall,54.4,59.6,Championship,England
+Birmingham City,49.6,63.2,Championship,England
+Cagliari,49.5,63.3,Serie A,Italy
+Charleroi,57.9,55.8,Pro League,Belgium
+Pisa,51.2,62.0,Serie A,Italy
+Apollon,48.4,63.9,Cyprus First Division,Cyprus
+Brann,57.7,55.6,Norway Eliteserien,Norway
+Derby County,52.5,60.6,Championship,England
+Schalke 04,53.8,59.3,2. Bundesliga,Germany
+Nantes,50.6,61.8,Ligue 1,France
+Watford,53.4,59.2,Championship,England
+Heidenheim,55.8,56.7,Bundesliga,Germany
+Nordsjaelland,58.5,54.0,Danish Superliga,Denmark
+Sabah,57.4,55.2,Azerbaijan Premier League,Azerbaijan
+Alanyaspor,53.3,58.9,Süper Lig,Türkiye
+Paphos,55.0,57.3,Cyprus First Division,Cyprus
+Sheffield United,55.4,56.9,Championship,England
+Celtic,59.5,52.5,Scottish Premiership,Scotland
+Lech Poznan,61.4,50.2,Ekstraklasa,Poland
+Paderborn,58.9,52.4,2. Bundesliga,Germany
+Rangers,55.8,55.3,Scottish Premiership,Scotland
+Brondby,52.0,58.8,Danish Superliga,Denmark
+Qarabag,58.5,52.3,Azerbaijan Premier League,Azerbaijan
+Gent,57.2,53.1,Pro League,Belgium
+Cremonese,50.2,59.6,Serie A,Italy
+Angers,47.6,61.5,Ligue 1,France
+Malmo FF,53.3,56.6,Sweden Allsvenskan,Sweden
+SonderjyskE,53.7,56.1,Danish Superliga,Denmark
+Istanbul Basaksehir,53.7,55.6,Süper Lig,Türkiye
+Goztepe,47.3,60.5,Süper Lig,Türkiye
+Hannover 96,55.2,53.3,2. Bundesliga,Germany
+Rijeka,50.4,57.8,Croatian HNL,Croatia
+Metz,55.4,52.7,Ligue 1,France
+West Bromwich Albion,48.1,59.4,Championship,England
+Groningen,55.5,52.2,Eredivisie,Netherlands
+Nacional,52.4,55.4,Liga Portugal,Portugal
+Cercle Brugge,59.4,47.5,Pro League,Belgium
+Hertha BSC,55.0,52.1,2. Bundesliga,Germany
+Rakow Czestochowa,53.5,53.8,Ekstraklasa,Poland
+Rosenborg,54.7,52.5,Norway Eliteserien,Norway
+Sparta Praha,53.9,53.3,Czech First League,Czech Republic
+Thun,62.4,43.0,Swiss Super League,Switzerland
+Bochum,52.6,54.2,2. Bundesliga,Germany
+BK Hacken,54.1,52.4,Sweden Allsvenskan,Sweden
+Konyaspor,47.0,58.8,Süper Lig,Türkiye
+Randers,49.2,57.0,Danish Superliga,Denmark
+Darmstadt 98,57.1,48.8,2. Bundesliga,Germany
+Bristol City,49.8,56.0,Championship,England
+Hajduk Split,51.1,54.9,Croatian HNL,Croatia
+Aris Limassol,52.4,53.3,Cyprus First Division,Cyprus
+Blackburn Rovers,42.3,61.8,Championship,England
+Jagiellonia Bialystok,55.7,49.7,Ekstraklasa,Poland
+Mjallby AIF,50.8,54.7,Sweden Allsvenskan,Sweden
+Samsunspor,45.0,59.7,Süper Lig,Türkiye
+Odense,54.6,50.8,Danish Superliga,Denmark
+Heerenveen,58.2,46.3,Eredivisie,Netherlands
+Legia Warszawa,50.9,54.3,Ekstraklasa,Poland
+OH Leuven,52.5,52.2,Pro League,Belgium
+Stoke City,48.3,55.8,Championship,England
+Zulte Waregem,53.2,51.3,Pro League,Belgium
+Arouca,52.3,51.9,Liga Portugal,Portugal
+Gornik Zabrze,51.9,52.3,Ekstraklasa,Poland
+Arminia Bielefeld,54.2,49.7,2. Bundesliga,Germany
+AEK Larnaca,45.0,57.9,Cyprus First Division,Cyprus
+Fortuna Dusseldorf,48.9,54.6,2. Bundesliga,Germany
+Piast Gliwice,54.0,49.2,Ekstraklasa,Poland
+Slovan Liberec,47.6,55.3,Czech First League,Czech Republic
+Young Boys,57.0,45.8,Swiss Super League,Switzerland
+Djurgardens IF,52.9,50.1,Sweden Allsvenskan,Sweden
+Magdeburg,59.1,42.3,2. Bundesliga,Germany
+APOEL,52.2,50.2,Cyprus First Division,Cyprus
+St.Gallen,55.4,46.6,Swiss Super League,Switzerland
+Mechelen,49.5,52.7,Pro League,Belgium
+Nurnberg,52.1,50.0,2. Bundesliga,Germany
+Hull City,50.7,51.3,Championship,England
+Motherwell,46.1,55.6,Scottish Premiership,Scotland
+Queens Park Rangers,46.8,54.7,Championship,England
+Lechia Gdansk,57.2,43.3,Ekstraklasa,Poland
+Rizespor,48.9,52.6,Süper Lig,Türkiye
+Leicester City,50.8,50.1,Championship,England
+Alverca,45.8,54.6,Liga Portugal,Portugal
+Antwerp,46.4,53.9,Pro League,Belgium
+La Louviere,42.3,57.1,Pro League,Belgium
+Dynamo Dresden,54.6,45.2,2. Bundesliga,Germany
+Hearts,43.4,55.5,Scottish Premiership,Scotland
+Pogon Szczecin,52.5,46.8,Ekstraklasa,Poland
+Sturm Graz,48.4,50.5,Austrian Bundesliga,Austria
+Valerenga,52.7,45.8,Norway Eliteserien,Norway
+Cracovia Krakow,42.6,54.9,Ekstraklasa,Poland
+Aris Thessaloniki,38.4,58.1,Greek Super League,Greece
+Kairat,41.4,55.9,Kazakhstan Premier League,Kazakhstan
+Sarpsborg 08,54.7,42.7,Norway Eliteserien,Norway
+AIK,45.9,51.5,Sweden Allsvenskan,Sweden
+Eintracht Braunschweig,47.2,50.4,2. Bundesliga,Germany
+LASK,49.6,47.3,Austrian Bundesliga,Austria
+Standard Liege,40.9,55.3,Pro League,Belgium
+Estrela,46.2,50.6,Liga Portugal,Portugal
+Sigma Olomouc,41.2,55.0,Czech First League,Czech Republic
+Go Ahead Eag,52.6,43.7,Eredivisie,Netherlands
+Sandefjord,50.4,45.5,Norway Eliteserien,Norway
+Moreirense,37.6,56.9,Liga Portugal,Portugal
+Charlton Athletic,39.3,55.4,Championship,England
+Radomiak Radom,48.7,46.9,Ekstraklasa,Poland
+Lausanne-Sport,50.7,44.7,Swiss Super League,Switzerland
+Oxford United,41.9,53.1,Championship,England
+Widzew Lodz,41.7,53.2,Ekstraklasa,Poland
+Astana,49.6,45.6,Kazakhstan Premier League,Kazakhstan
+Sion,45.3,49.7,Swiss Super League,Switzerland
+Sparta R’dam,50.7,44.4,Eredivisie,Netherlands
+Austria Wien,46.9,47.9,Austrian Bundesliga,Austria
+GKS Katowice,47.4,47.4,Ekstraklasa,Poland
+IFK Goteborg,47.9,46.8,Sweden Allsvenskan,Sweden
+Telstar,51.3,42.9,Eredivisie,Netherlands
+Preston North End,42.9,51.0,Championship,England
+Turan,30.8,59.8,Azerbaijan Premier League,Azerbaijan
+Banik Ostrava,49.1,44.1,Czech First League,Czech Republic
+Kaiserslautern,50.1,43.1,2. Bundesliga,Germany
+Luzern,54.9,37.5,Swiss Super League,Switzerland
+Atromitos,37.2,54.5,Greek Super League,Greece
+Holstein Kiel,48.5,44.3,2. Bundesliga,Germany
+Dender,45.3,47.3,Pro League,Belgium
+Lugano,44.8,47.3,Swiss Super League,Switzerland
+Vejle BK,47.6,44.4,Danish Superliga,Denmark
+Basel,50.5,40.9,Swiss Super League,Switzerland
+Rio Ave,40.1,51.3,Liga Portugal,Portugal
+GAIS,46.0,45.7,Sweden Allsvenskan,Sweden
+IK Sirius,51.0,40.2,Sweden Allsvenskan,Sweden
+Hibernian,43.3,47.8,Scottish Premiership,Scotland
+Korona Kielce,44.7,46.4,Ekstraklasa,Poland
+Tondela,38.1,52.3,Liga Portugal,Portugal
+Gazisehir Gaziantep,45.9,44.7,Süper Lig,Türkiye
+Jablonec,42.2,48.2,Czech First League,Czech Republic
+Kocaelispor,31.6,56.8,Süper Lig,Türkiye
+Ordabasy,45.1,45.5,Kazakhstan Premier League,Kazakhstan
+Fredrikstad,43.4,47.0,Norway Eliteserien,Norway
+Lillestrom,47.6,42.7,Norway Eliteserien,Norway
+Zaglebie Lubin,44.9,45.4,Ekstraklasa,Poland
+Bohemians 1905,40.7,49.3,Czech First League,Czech Republic
+Rapid Wien,38.5,51.2,Austrian Bundesliga,Austria
+Excelsior,44.8,45.3,Eredivisie,Netherlands
+KFUM,41.7,48.2,Norway Eliteserien,Norway
+Silkeborg,46.1,43.9,Danish Superliga,Denmark
+Kasimpasa,34.6,53.9,Süper Lig,Türkiye
+Servette FC,46.9,42.9,Swiss Super League,Switzerland
+Neftci,45.4,44.0,Azerbaijan Premier League,Azerbaijan
+Hradec Kralove,39.6,49.3,Czech First League,Czech Republic
+NAC Breda,45.9,43.4,Eredivisie,Netherlands
+Fortuna Sittard,50.0,38.2,Eredivisie,Netherlands
+Karlsruher SC,49.0,38.8,2. Bundesliga,Germany
+Karvina,49.7,38.1,Czech First League,Czech Republic
+IF Elfsborg,45.9,41.6,Sweden Allsvenskan,Sweden
+Zwolle,45.5,42.0,Eredivisie,Netherlands
+Yelimay,48.2,38.4,Kazakhstan Premier League,Kazakhstan
+Levadiakos,42.0,44.6,Greek Super League,Greece
+HamKam,45.8,40.6,Norway Eliteserien,Norway
+Motor Lublin,42.8,43.3,Ekstraklasa,Poland
+Greuther Furth,44.0,42.1,2. Bundesliga,Germany
+Kifisia,43.1,42.9,Greek Super League,Greece
+Preuen Munster,42.2,43.5,2. Bundesliga,Germany
+Fatih Karagumruk,40.1,45.2,Süper Lig,Türkiye
+Anorthosis,35.5,48.8,Cyprus First Division,Cyprus
+Nieciecza,47.7,37.0,Ekstraklasa,Poland
+Eyupspor,32.1,51.5,Süper Lig,Türkiye
+Slaven,41.1,43.7,Croatian HNL,Croatia
+Teplice,35.7,48.4,Czech First League,Czech Republic
+Mlada Boleslav,43.0,41.2,Czech First League,Czech Republic
+WSG Tirol,38.2,45.2,Austrian Bundesliga,Austria
+Kayserispor,38.1,44.9,Süper Lig,Türkiye
+Ried,38.3,44.8,Austrian Bundesliga,Austria
+Zira,29.4,51.7,Azerbaijan Premier League,Azerbaijan
+FC Fredericia,49.6,31.8,Danish Superliga,Denmark
+Genclerbirligi,35.8,46.2,Süper Lig,Türkiye
+Grasshopper,43.1,39.2,Swiss Super League,Switzerland
+Arka Gdynia,40.0,42.2,Ekstraklasa,Poland
+Kristiansund,43.9,37.6,Norway Eliteserien,Norway
+Slovacko,40.4,41.1,Czech First League,Czech Republic
+Falkirk,35.7,45.5,Scottish Premiership,Scotland
+Wisla Plock,40.2,41.1,Ekstraklasa,Poland
+AVS Futebol,34.7,45.6,Liga Portugal,Portugal
+Casa Pia,34.4,46.1,Liga Portugal,Portugal
+Shamrock Rovers,29.8,49.8,Irish Premier Division,Ireland
+St Patricks Athletic,35.0,45.4,Irish Premier Division,Ireland
+Pardubice,38.4,41.8,Czech First League,Czech Republic
+Lokomotiva Zagreb,36.4,43.0,Croatian HNL,Croatia
+SCR Altach,31.4,47.4,Austrian Bundesliga,Austria
+Zlin,38.2,41.2,Czech First League,Czech Republic
+Volos NFC,35.0,43.8,Greek Super League,Greece
+Wolfsberger AC,38.7,40.0,Austrian Bundesliga,Austria
+Antalyaspor,30.6,46.7,Süper Lig,Türkiye
+Omonia Aradippou,38.3,39.7,Cyprus First Division,Cyprus
+AEL,34.1,42.8,Cyprus First Division,Cyprus
+Blau-Wei Linz,37.2,39.8,Austrian Bundesliga,Austria
+Zurich,43.6,32.8,Swiss Super League,Switzerland
+Volendam,39.8,36.5,Eredivisie,Netherlands
+Larissa,32.7,43.2,Greek Super League,Greece
+Heracles Almelo,38.4,37.5,Eredivisie,Netherlands
+Vasteras SK,38.0,37.9,Sweden Allsvenskan,Sweden
+Gorica,34.0,41.5,Croatian HNL,Croatia
+Panaitolikos,28.5,46.2,Greek Super League,Greece
+Varazdin,37.4,37.7,Croatian HNL,Croatia
+Start,38.0,36.4,Norway Eliteserien,Norway
+Bohemians,31.6,42.3,Irish Premier Division,Ireland
+Grazer AK,29.6,44.0,Austrian Bundesliga,Austria
+Osijek,33.3,40.6,Croatian HNL,Croatia
+Altay,32.2,41.4,Kazakhstan Premier League,Kazakhstan
+Dukla Praha,28.6,44.3,Czech First League,Czech Republic
+Hartberg,29.4,43.7,Austrian Bundesliga,Austria
+Kalmar FF,37.0,36.5,Sweden Allsvenskan,Sweden
+IF Brommapojkarna,37.4,35.5,Sweden Allsvenskan,Sweden
+Dundee United,37.7,35.1,Scottish Premiership,Scotland
+Asteras Tripolis,28.8,43.2,Greek Super League,Greece
+Krasava ENY,31.3,41.0,Cyprus First Division,Cyprus
+Sheffield Wednesday,24.8,46.3,Championship,England
+OFI Crete,32.7,39.3,Greek Super League,Greece
+Aktobe,32.7,38.9,Kazakhstan Premier League,Kazakhstan
+Tobol,34.9,35.8,Kazakhstan Premier League,Kazakhstan
+Istra 1961,34.5,36.1,Croatian HNL,Croatia
+Aalesund,37.0,33.4,Norway Eliteserien,Norway
+Degerfors IF,33.5,36.5,Sweden Allsvenskan,Sweden
+Irtysh,33.8,35.7,Kazakhstan Premier League,Kazakhstan
+Olympiakos,30.9,37.2,Cyprus First Division,Cyprus
+Halmstads BK,30.5,37.1,Sweden Allsvenskan,Sweden
+Kyzyl-Zhar,26.3,40.6,Kazakhstan Premier League,Kazakhstan
+Shamaki,21.4,44.7,Azerbaijan Premier League,Azerbaijan
+Panserraikos,29.1,37.8,Greek Super League,Greece
+Atyrau,19.6,46.0,Kazakhstan Premier League,Kazakhstan
+FC Winterthur,40.6,25.7,Swiss Super League,Switzerland
+Zhenys,28.5,38.0,Kazakhstan Premier League,Kazakhstan
+St Mirren,30.5,35.8,Scottish Premiership,Scotland
+Derry City,28.4,36.6,Irish Premier Division,Ireland
+Shelbourne,29.3,35.6,Irish Premier Division,Ireland
+Sumqayit,28.6,36.3,Azerbaijan Premier League,Azerbaijan
+Kilmarnock,36.6,28.1,Scottish Premiership,Scotland
+Qabala,31.1,33.0,Azerbaijan Premier League,Azerbaijan
+Vukovar 1991,32.2,31.1,Croatian HNL,Croatia
+Dundee,34.8,28.2,Scottish Premiership,Scotland
+Araz,26.9,35.9,Azerbaijan Premier League,Azerbaijan
+Aberdeen,26.4,35.5,Scottish Premiership,Scotland
+Ethnikos Achna,28.0,33.7,Cyprus First Division,Cyprus
+Orgryte,29.8,32.0,Sweden Allsvenskan,Sweden
+Akritas,27.2,31.4,Cyprus First Division,Cyprus
+Kapaz,26.7,31.2,Azerbaijan Premier League,Azerbaijan
+Livingston,26.4,28.5,Scottish Premiership,Scotland
+Kaisar,21.4,32.8,Kazakhstan Premier League,Kazakhstan
+Okzhetpes,27.9,25.3,Kazakhstan Premier League,Kazakhstan
+FC Caspiy,24.1,28.7,Kazakhstan Premier League,Kazakhstan
+Dundalk,26.0,26.1,Irish Premier Division,Ireland
+Zhetysu,21.8,30.4,Kazakhstan Premier League,Kazakhstan
+Imishli,12.9,38.3,Azerbaijan Premier League,Azerbaijan
+Ulytau,21.4,27.3,Kazakhstan Premier League,Kazakhstan
+Galway United,19.6,27.0,Irish Premier Division,Ireland
+Sligo Rovers,20.8,25.1,Irish Premier Division,Ireland
+Drogheda United,18.7,26.4,Irish Premier Division,Ireland
+Karvan FK,13.0,30.4,Azerbaijan Premier League,Azerbaijan
+Waterford FC,22.0,16.3,Irish Premier Division,Ireland
+Enosis,12.6,22.6,Cyprus First Division,Cyprus
