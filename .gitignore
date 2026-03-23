@@ -4,3 +4,5 @@ docs/*
 !docs/*.tex
 !docs/*.pdf
 .DS_Store
+
+*.pyc
