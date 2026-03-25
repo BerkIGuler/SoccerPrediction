@@ -3,6 +3,7 @@ data/**/*.py
 docs/*
 !docs/*.tex
 !docs/*.pdf
+!docs/*.png
 .DS_Store
 
 *.pyc
