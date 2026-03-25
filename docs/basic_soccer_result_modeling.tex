@@ -6,6 +6,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
 
 \title{Match score model:\\Poisson goals, outcomes, and empirical rates}
 \author{}
@@ -161,5 +163,46 @@ The constant $k > 0$ controls shrinkage strength.
   \item \textbf{Relation to \eqref{eq:joint}.}
   Any $(\lambda_A,\lambda_B)$---whether from theory, ratings, or \eqref{eq:product}---can be inserted into \eqref{eq:joint} to approximate the score grid and outcome probabilities in Section~\ref{sec:model}.
 \end{itemize}
+
+\noindent
+%-------------------------------------------------------------------------
+\section{From match-level Poisson rates to league simulation}
+\label{sec:league-sim}
+
+This repo uses the same Poisson goals model to simulate an entire league season in a week-by-week (autoregressive) way.
+
+\subsection{When a scoreline is missing}
+The input table stores, for each fixture cell, an encoded opponent index, a venue flag (home/away), and the realized scoreline from the perspective of the row team, with an explicit placeholder ? for not-yet-played games.
+The notebook detects the first week containing any ? cell and treats all earlier weeks as already played.
+
+\subsection{Autoregressive Monte Carlo}
+For each Monte Carlo run, the simulation iterates weeks from that first missing week to the last week column.
+Before simulating a given week, it maintains pooled, per-team scoring summaries computed from all games known so far in that run:
+\begin{itemize}
+  \item pooled goals-for for team $t$: $\bar{s}_t$,
+  \item pooled goals-against for team $t$: $\bar{c}_t$,
+\end{itemize}
+and it computes a league baseline $\mu$ from the same set of known matches (overall mean goals scored per match-row).
+
+For an upcoming fixture, the notebook knows the host/guest from the venue flag in the input and converts pooled summaries into Poisson mean goal rates using the multiplicative structure of Eq.~\eqref{eq:product}, with a fixed home multiplier $h>1$ for the host side:
+\begin{align*}
+  \lambda_{\text{host}} &= \bar{s}_{\text{host}} \cdot \frac{\bar{c}_{\text{guest}}}{\mu} \cdot h, \\
+  \lambda_{\text{guest}} &= \bar{s}_{\text{guest}} \cdot \frac{\bar{c}_{\text{host}}}{\mu}.
+\end{align*}
+Given these rates, it draws independent Poisson goals
+$X_{\text{host}} \sim \mathrm{Poisson}(\lambda_{\text{host}})$ and
+$X_{\text{guest}} \sim \mathrm{Poisson}(\lambda_{\text{guest}})$.
+If the fixture score is already present (not ?), the realized scoreline is used instead of sampling.
+After completing each full week, it updates the pooled summaries with the newly known (realized or simulated) outcomes, so later weeks are conditional on earlier simulated results.
+
+\subsection{League table, tie-breaks, and rank probabilities}
+After simulating through the last week, the notebook computes final league points (3 for a win, 1 for a draw) and orders teams using:
+points,
+then head-to-head points among tied teams,
+then head-to-head goal difference among those teams,
+then head-to-head goals scored.
+If metrics still do not uniquely determine an ordering, it falls back to a deterministic order by team index to prevent Monte Carlo crashes.
+
+Finally, it estimates $P(\mathrm{rank}=k)$ by counting how often each team finishes at each rank across all Monte Carlo runs and reports an expected rank as the probability-weighted average.
 
 \end{document}
